@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>월간 근무표 생성기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>월간 근무표 생성기</h1>
+    <input type="date" id="datePicker" onchange="updateDate()" />
+    <div id="employee"></div>
+    <button onclick="addEmployee()">직원 추가하기</button>
+    <button onclick="showVacationForm()">휴가 신청하기</button>
+    <div id="vacation" style="display: none;"></div>
+    <button onclick="generateWorkSchedule()">생성</button>
+    <div id="workSchedule"></div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
